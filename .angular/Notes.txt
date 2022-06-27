@@ -206,6 +206,37 @@ Line No 29
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
 
+setting configuration of git---
+
+git config --local user.email "admin@gmail.com"
+
+git config --local user.email "admin"
+
+used to attach local repo with remote repo: 
+(It is first time job)
+git remote add origin https://github.com/Shraddha567/ecommerce-app-24062022
+
+Upstream : Pushing the source codefrom local repository.(Every time job)
+
+Move the source code from *1st stage * staging area: git add fileName1 fileName2 fileName3 |  (.indicates adding all the files)
+
+Move the source code from staging area to local repository:
+git commit -m " any user defined message"
+
+Moves the source code from local repository to remote repository:
+git push -u origin main
+
+Downstream: It pulls source code from remote to local
+git pull
+ 
+
+
+
+
+
+
+
+
 
 
 
