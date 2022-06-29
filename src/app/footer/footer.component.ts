@@ -6,13 +6,16 @@ import { Component, OnInit} from '@angular/core';
     styleUrls: ['./footer.component.css']
 })
 
-export class FooterComponent{
+export class FooterComponent implements OnInit{
     // constructor will be called at the time of the creation of object.
-    constructor(){
-
+    
+     constructor(){
+       
     }
-    // ngOnInit method will be triggered on load of the component...once object has been created for this component then this component will be loaded in this browser and once the loading of the component done then ngOnInit() function called and it can be onload function onload of the page
+    
     ngOnInit(): void{
-        
+       
     }
 }
+
+// ngOnInit method will be triggered on load of the component...once object has been created for this component then this component will be loaded in this browser and once the loading of the component done then ngOnInit() function called and it can be onload function onload of the page.

@@ -7,6 +7,10 @@ import { TestComponent } from './test/test.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent }from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ProductsComponent } from './products/products.component';
+import { CommonModule } from '@angular/common';
+import { UsersComponent } from './users/users.component';
+
 
 @NgModule({
   declarations: [
@@ -14,10 +18,13 @@ import { NavbarComponent } from './navbar/navbar.component';
     TestComponent,
     HomeComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProductsComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule
   ],
   providers: [],

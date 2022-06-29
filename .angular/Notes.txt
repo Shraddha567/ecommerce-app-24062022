@@ -50,7 +50,7 @@ tsconfig.spec.json: Used for configuration unit test cases compiler options.
 
 karma.conf.js :  Configuration of karma Js test runner will be available. 
 
-gitignore : used to mention the ignore files from remote git.
+git ignore : used to mention the ignore files from remote git.
 
 .browserslistrc : # This file is used by the build system to adjust css and JS output to support the
 
@@ -205,7 +205,8 @@ Line No 29
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
-
+-----------------------------------------------------
+Git:
 setting configuration of git---
 
 git config --local user.email "admin@gmail.com"
@@ -216,6 +217,8 @@ used to attach local repo with remote repo:
 (It is first time job)
 git remote add origin https://github.com/Shraddha567/ecommerce-app-24062022
 
+-----------------------------------------------------
+
 Upstream : Pushing the source codefrom local repository.(Every time job)
 
 Move the source code from *1st stage * staging area: git add fileName1 fileName2 fileName3 |  (.indicates adding all the files)
@@ -225,20 +228,111 @@ git commit -m " any user defined message"
 
 Moves the source code from local repository to remote repository:
 git push -u origin main
+-----------------------------------------------------
 
 Downstream: It pulls source code from remote to local
-git pull
- 
+git pull.
 
+for getting the existing repository source code to local machine:
+ git clone https://github.com/Shraddha567/ecommerce-app-24062022.git
+----------------------------------------------------
 
+Property Binding: Used to communicate form component to template.
 
+Syntax:
+[attributeName] = "value";
 
+ String Interpolation:we can bind the data from our component to HTML..conctenation can be done and evaluates the whole expression.
+ {{title}}
+ {{title + '5000'}}
+ {{value}}
+ {{10 + 20}}
 
+Event Binding: for communicating template layer to component layer. 
+Syntax: 
+In javascript <form onClick="functionName()"></form>
 
+In Angular <form (click)="methodName()"></form>
 
+Directives: Directives are classes that add additional behavior to elements in your Angular applications. 
+1. Structural Directives: It adds or removes the elements from the DOM structure.
+-> *ngIf else
+-> *ngFor
+-> * [ngSwitch]
 
+*ngIf:
+<element *ngIf="condition; else dummyVariable"></element>
+<ng-template #dummyVariable></ng-template>
 
+*ngFor: 
+Syntax: 
+<element *ngFor="let elem of arrayName; let i = index" ></element>
 
+*[ngSwitch]
+Syntax:
+<element [ngSwitch]="parameter">
+<celement *ngSwitchCase="value"></celement>
+<celememt *ngSwitchCase="value"></celememt>
+<celement *ngSwitchCase="value"></celement>
+</element>
+                V/S
+
+*ngIf
+<element>
+<celement *ngIf="parameter === value"></celement>
+<celement *ngIf="parameter === value"></celement>
+<celement *ngIf="parameter === value"></celement>
+</element>
+2. Attribute Directives: It adds or removes styling of an element in he DOM structure. 
+-> [ngClass]
+-> [ngStyle]
+conditionally applied.
+
+<a href =""></a>
+[ngClass]: Used to add or remove classes dynamically for a particular element.
+Angular ngClass:
+<element [ngClass]="{'className': value, 'className': value, 'className': value}"></element>
+
+HTML: 
+<element class ="className1 className2 className3"></element>
+Note: directives are custom attributes in html.
+https://www.w3schools.com/angular/angular_ref_directives.asp
+
+AngularJS * lets you extend HTML with new attributes called Directives ,
+* it has a set of built-in directives which offers functionality to your applications and 
+* it also lets you define your own directives.
+AngularJS directives are extended HTML attributes with the prefix ng-.
+1) The ng-app directive initializes an AngularJS application.
+
+2) The ng-init directive initializes application data.
+
+3) The ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
+
+ One-way binding: the flow is one-directional.This means that the flow of code is from ts file to  Html file.
+
+Two-way binding: The flow is two-directional.This means that the flow of code is from ts file to Html file as well as from Html file to ts file.
+
+[ngStyle]: Used to add or remove stylings dynamically for an element.
+Syntax: 
+<element [ngStyle] = "{'backgroundColor': value, color: value}"></element>
+
+Routing: Used to navigate from one page to another page without reading whole application.
+SPA : Single Page Application- Routing
+when we want to navigates from one page to another page, internally it replaces existing component with 
+new component in index.html.file.
+
+-> For every module, we will define a sperate configuration.(Eg. app-routing.module.ts) file.
+
+Router Module: Used to give routing configuration of a module to angular CLI.
+Routes : Used to define routes for that module.
+
+RouterModule.forRoot -> used to give root module as an input to angular CLI.
+RouterModule.forChild -> used to give child module as an input to root module.
+
+Routes:
+const routes: Routes = [
+  {path: '', component: ComponentClassName} -> One route of a module
+];
 
 
 

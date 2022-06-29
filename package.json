@@ -10,7 +10,7 @@
     "local": "ng --version"
   },
   "private": true,
-  "dependencies": {
+  "dependencies" : {
     "@angular/animations": "~13.2.0",
     "@angular/common": "~13.2.0",
     "@angular/compiler": "~13.2.0",
